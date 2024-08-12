@@ -2,6 +2,7 @@ import Header from "@/app/ui/dashboard/header";
 import Card from "@/app/ui/dashboard/card-totals";
 import AnalyticsChart from "@/app/ui/dashboard/chart";
 import CreditContainer from "@/app/ui/dashboard/credit-container";
+import ActivityCard from "@/app/ui/dashboard/activity-container";
 
 export default function Page() {
   return (
@@ -17,8 +18,9 @@ export default function Page() {
             <AnalyticsChart />
           </div>
         </main>
-        <aside className="flex-0 w-full md:w-3/12">
+        <aside className="flex flex-col flex-0 w-full md:w-3/12 gap-7">
           <CreditContainer />
+          <ActivityCard />
         </aside>
       </section>
     </div>

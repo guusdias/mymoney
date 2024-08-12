@@ -30,9 +30,9 @@ export default function AnalyticsChart() {
 
   return (
     <div className="w-full md:col-span-4">
-      <div className="flex items-center justify-between">
+      <div className="flex items-start md:items-center justify-between md:flex-row flex-col">
         <h2 className={`font-bold mb-4 text-xl md:text-2xl`}>Analytics</h2>
-        <div className="flex flex-row gap-10   mb-4">
+        <div className="flex gap-10 mb-4 md:flex-row flex-col">
           <span className="font-bold flex items-center gap-2 text-sm">
             <div className="bg-lighterPurple w-2 h-2 rounded-full"></div>Outcome
           </span>

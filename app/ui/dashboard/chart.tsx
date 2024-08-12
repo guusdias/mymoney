@@ -31,7 +31,7 @@ export default function AnalyticsChart() {
       {/* NOTE: Uncomment this code in Chapter 7 */}
 
       <div className="rounded-xl bg-darkPurple p-4">
-        <div className="sm:grid-cols-9 mt-0 grid grid-cols-12 items-end gap-2 rounded-md bg-darkPurple p-0 md:gap-4">
+        <div className="sm:grid-cols-13 mt-0 grid grid-cols-12 items-end gap-2 rounded-md bg-darkPurple p-0 md:gap-4">
           <div
             className="mb-6 hidden flex-col justify-between text-sm text-gray-400 sm:flex"
             style={{ height: `${chartHeight}px` }}

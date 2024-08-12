@@ -10,7 +10,9 @@ export default function SideNav() {
         className="mb-2 flex h-20 items-end justify-start rounded-md bg-purple p-4 md:h-40"
         href="/"
       >
-        <div className="w-32 text-white md:w-40 text-2xl font-bold">Logo</div>
+        <div className="w-32 text-white md:w-40 text-2xl font-bold">
+          Mymoney
+        </div>
       </Link>
       <div className="flex grow flex-row justify-between space-x-0 md:flex-col md:space-x-0 md:space-y-5">
         <NavLinks />

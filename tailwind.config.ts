@@ -18,6 +18,7 @@ const config: Config = {
         darkerPurple: "#141332",
         purple: "#4B4B99",
         lighterPurple: "#6359E9",
+        bluePool: "#64CFF6",
       },
     },
   },

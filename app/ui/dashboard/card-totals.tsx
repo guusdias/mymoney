@@ -12,11 +12,11 @@ interface CardProps {
 
 export default function Card({ type, amount, percentageChange }: CardProps) {
   const isIncome = type === "income";
-  const color = isIncome ? "#38BDF8" : "#8B5CF6";
+  const color = isIncome ? "#38BDF8" : "#6359E9";
   const changeColor = isIncome ? "#02B15A " : "#E41414";
   const bg = isIncome ? "#05994f39" : "#eb001b3d";
   return (
-    <div className="bg-darkPurple p-7 flex items-center justify-between rounded-3xl">
+    <div className="bg-darkPurple p-7 flex items-center justify-between rounded-3xl w-full">
       <div className="flex items-center">
         <div
           className="rounded-2xl p-5"

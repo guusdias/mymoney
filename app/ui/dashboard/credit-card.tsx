@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CreditCard() {
   return (
-    <main className="bg-gradient-to-br from-darkPurple to-lighterPurple p-6 rounded-3xl max-w-xs text-white flex flex-col gap-4">
+    <main className="bg-gradient-to-br from-darkPurple to-lighterPurple p-6 rounded-3xl max-w-xs text-white flex flex-col gap-4 w-full">
       <div className="flex justify-between items-center">
         <p className="text-sm font-thin">Current Balance</p>
         <Image alt="card brand" src="/master-card.png" width={40} height={40} />

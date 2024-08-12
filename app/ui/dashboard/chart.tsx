@@ -11,13 +11,16 @@ const data = [
   { month: "Jun", income: 23000, outcome: 24000 },
   { month: "Jul", income: 34000, outcome: 30000 },
   { month: "Aug", income: 27000, outcome: 28000 },
+  { month: "Sep", income: 27000, outcome: 28000 },
+  { month: "Oct", income: 27000, outcome: 28000 },
+  { month: "Nov", income: 27000, outcome: 28000 },
+  { month: "Dec", income: 27000, outcome: 28000 },
 ];
 
 export default function AnalyticsChart() {
   const revenue = data;
 
   const chartHeight = 350;
-  // NOTE: Uncomment this code in Chapter 7
 
   const { yAxisLabels, topLabel } = generateYAxis(revenue);
 
@@ -28,10 +31,8 @@ export default function AnalyticsChart() {
   return (
     <div className="w-full md:col-span-4">
       <h2 className={`font-bold mb-4 text-xl md:text-2xl`}>Analytics</h2>
-      {/* NOTE: Uncomment this code in Chapter 7 */}
-
       <div className="rounded-xl bg-darkPurple p-4">
-        <div className="sm:grid-cols-13 mt-0 grid grid-cols-12 items-end gap-2 rounded-md bg-darkPurple p-0 md:gap-4">
+        <div className="flex overflow-x-auto">
           <div
             className="mb-6 hidden flex-col justify-between text-sm text-gray-400 sm:flex"
             style={{ height: `${chartHeight}px` }}
@@ -41,30 +42,32 @@ export default function AnalyticsChart() {
             ))}
           </div>
 
-          {revenue.map((month) => (
-            <div
-              key={month.month}
-              className="flex flex-col items-center  gap-2"
-            >
-              <div className="flex flex-row items-end gap-1">
-                <div
-                  className="w-2 rounded-md bg-lighterPurple"
-                  style={{
-                    height: `${(chartHeight / topLabel) * month.income}px`,
-                  }}
-                ></div>
-                <div
-                  className="w-2 rounded-md bg-bluePool"
-                  style={{
-                    height: `${(chartHeight / topLabel) * month.outcome}px`,
-                  }}
-                ></div>
+          <div className="flex items-end justify-evenly w-full">
+            {revenue.map((month) => (
+              <div
+                key={month.month}
+                className="flex flex-col items-center gap-0"
+              >
+                <div className="flex flex-row items-end gap-1">
+                  <div
+                    className="w-2 rounded-md bg-lighterPurple"
+                    style={{
+                      height: `${(chartHeight / topLabel) * month.income}px`,
+                    }}
+                  ></div>
+                  <div
+                    className="w-2 rounded-md bg-bluePool"
+                    style={{
+                      height: `${(chartHeight / topLabel) * month.outcome}px`,
+                    }}
+                  ></div>
+                </div>
+                <p className="-rotate-90 text-sm text-gray-400 sm:rotate-0">
+                  {month.month}
+                </p>
               </div>
-              <p className="-rotate-90 text-sm text-gray-400 sm:rotate-0">
-                {month.month}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

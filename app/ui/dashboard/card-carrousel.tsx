@@ -16,9 +16,5 @@ interface Component {
 // ];
 
 export default function CardCarrousel() {
-  return (
-    <div>
-      <button>left</button>
-    </div>
-  );
+  return <div>{/* <button>left</button> */}</div>;
 }

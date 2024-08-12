@@ -3,7 +3,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 export default function Header() {
   return (
-    <header className="bg-darkerPurple p-0 md:p-4 bo">
+    <header className="">
       <div className=" mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex gap-1 flex-col">
           <div className="flex items-center font-bold text-2xl">

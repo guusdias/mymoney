@@ -16,7 +16,7 @@ export default function Card({ type, amount, percentageChange }: CardProps) {
   const changeColor = isIncome ? "#02B15A " : "#E41414";
   const bg = isIncome ? "#05994f39" : "#eb001b3d";
   return (
-    <div className="bg-darkPurple p-7 flex items-center justify-between w-200 rounded-3xl">
+    <div className="bg-darkPurple p-7 flex items-center justify-between rounded-3xl">
       <div className="flex items-center">
         <div
           className="rounded-2xl p-5"
